@@ -100,7 +100,7 @@ bot.on("callback_query", (callbackQuery) => {
                     
     }
                 ///////////////вывод по дням////////////
-    var keyboard = buttons.calendarButtons.reply_markup;
+    /*var keyboard = buttons.calendarButtons.reply_markup;
     var leng = keyboard.length;
     keyboard = JSON.parse(keyboard, function(k,v){
         if(k === 'callback_data'){      
@@ -110,7 +110,7 @@ bot.on("callback_query", (callbackQuery) => {
     if(callbackQuery.data === times){
         bot.answerCallbackQuery(callbackQuery.id)
         .then(() => bot.sendMessage(msg.chat.id, "В эти дни пройдут следующие события:\n\r"+times))
-    }
+    }*/
 
 
 });
