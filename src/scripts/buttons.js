@@ -32,8 +32,8 @@ var locationButtons = {
     reply_markup: JSON.stringify({
         inline_keyboard: 
         [
-            [{text: `Ледовый дворец "Рассвет"`, callback_data:'1'}],
-            [{text: `Ледовая Арена "Платинум Арена Красноясрк"`, callback_data:'2'}],
+            [{text: `Ледовый дворец "Рассвет"`, callback_data:'rassvet'}],
+            [{text: `Ледовая Арена "Платинум Арена Красноясрк"`, callback_data:'platina'}],
             [{text: `Комплекс "Академия биатлона"`, callback_data:'3'}],
             [{text: `Комплекс "Арена-Север"`, callback_data:'4'}],
             [{text: `Стадион им Ленинского комсомола`, callback_data:'5'}],
@@ -73,7 +73,7 @@ var disciplinesButtons = {
             [{text: `Биатлон`, callback_data:`20`}, {text: `Сноуборд`, callback_data: `21`}],
             [{text: `Лыжные гонки`, callback_data:`22`}, {text: `Кёрлинг`, callback_data: `23`}],
             [{text: `Шорт-трек`, callback_data:`24`}, {text: `Фигурное катание`, callback_data: `25`}],
-            [{text: `Хоккей`, callback_data:`26`}, {text: `Горные лыжи`, callback_data: `27`}],
+            [{text: `Хоккей`, callback_data:`26`}, {text: `Горные лыжи`, callback_data: `sky`}],
             [{text: `Фристайл`, callback_data:`28`}, {text: `Хоккей с мячом`, callback_data: `29`}],
             [{text: `Спорт. ориентирование`, callback_data:`30`}]            
         ]
@@ -85,5 +85,6 @@ module.exports = {
     startButtons: startButtons,
     menuButtons: menuButtons,
     locationButtons: locationButtons,
-    calendarButtons: calendarButtons
+    calendarButtons: calendarButtons,
+    disciplinesButtons: disciplinesButtons
 };
